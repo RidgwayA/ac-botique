@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +12,7 @@ export default function Navbar() {
         {/* Logo */}
 <div className="flex items-center gap-3 text-xl font-bold text-gray-800">
   <img
-    src="src/assets/logo.png"
+    src={logo}
     alt="Logo"
     className="h-10 w-auto object-contain"
   />
