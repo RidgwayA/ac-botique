@@ -32,7 +32,7 @@ useEffect(() => {
 
   return (
     <section
-      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-2 md:px-4 gap-x-6 pt-16 pb-20 bg-white max-w-6xl mx-auto bg-no-repeat bg-center bg-[length:800px]"
+      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-2 md:px-4 gap-x-6 pt-16 pb-20 bg-grey36 max-w-6xl mx-auto bg-no-repeat bg-center bg-[length:800px]"
       style={{
         backgroundImage: showBackground ? `url(${bgTexture})` : "none"
       }}

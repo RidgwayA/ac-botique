@@ -25,7 +25,7 @@ export default function Offerings() {
   ];
 
   return (
-    <section className="bg-pink-50 py-16 px-4 md:px-8">
+    <section className="bg-pink-50 py-16 px-4 md:px-8 rounded-2xl">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
           Current Offerings
