@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.css",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./app.css",
   ],
   theme: {
     extend: {},
