@@ -89,7 +89,7 @@ export default function OrderModal({ onClose }) {
 
   return (
     <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50">
-      <div className="bg-lightpink2 w-full max-w-3xl p-6 md:p-8 rounded-xl shadow-xl overflow-y-auto max-h-[90vh] relative">
+      <div className="bg-pink-50 w-full max-w-3xl p-6 md:p-8 rounded-xl shadow-xl overflow-y-auto max-h-[90vh] relative">
         <button
           className="absolute top-4 right-4 text-2xl text-black hover:text-gray-800"
           onClick={onClose}
@@ -171,7 +171,7 @@ export default function OrderModal({ onClose }) {
 
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-pink-400 to-pink-700 text-white font-semibold px-6 py-3 rounded shadow hover:opacity-50 border border-black"
+                        className="inline-block font-semibold px-6 py-3 rounded  bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:bg-gradient-to-l focus:ring-purple-200 dark:focus:ring-purple-800"
             disabled={!form.agreed}
           >
             Submit Order

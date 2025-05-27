@@ -15,7 +15,7 @@ export default function Gallery() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="min-h-screen bg-pink-50 py-16 px-4 md:px-8">
+    <section className="min-h-screen bg-pink-200 py-16 px-4 md:px-8 rounded-2xl">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-800 mb-10">Cake Gallery</h2>
 

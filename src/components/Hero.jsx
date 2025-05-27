@@ -62,7 +62,7 @@ useEffect(() => {
         </p>
 <button
   onClick={() => setShowModal(true)}
-  className="px-6 py-3 text-white font-semibold rounded-md bg-gradient-to-r from-pink to-lightpink shadow-md hover:opacity-90"
+  className="px-6 py-3 font-semibold rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:bg-gradient-to-l focus:ring-purple-200 dark:focus:ring-purple-800"
 >
   Schedule a Consultation
 </button>
@@ -72,7 +72,7 @@ useEffect(() => {
 
       {/* Right Image with Fade and Depth */}
       <div className="relative w-full max-w-sm h-[700px] flex items-center justify-center mb-8 md:mb-0">
-        <div className="absolute inset-0 translate-x-4 translate-y-4 bg-lightpink rounded-2xl z-0" />
+        <div className="absolute inset-0 translate-x-4 translate-y-4 bg-pink-200 rounded-2xl z-0" />
         {images.map((img, i) => (
           <img
             key={i}

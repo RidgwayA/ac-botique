@@ -4,7 +4,7 @@ import OrderModal from "./OrderModal"; // make sure this file exists
 export default function Offerings() {
   const [showModal, setShowModal] = useState(false);
 
-  const items = [    
+  const items = [
     { name: "Double Layer Sheet Cakes", price: "$75" },
     { name: "Custom Cakes (Starting at)", price: "$50" },
     { name: "Carrot Cakes 8″", price: "$25" },
@@ -25,7 +25,7 @@ export default function Offerings() {
   ];
 
   return (
-    <section className="bg-pink-50 py-16 px-4 md:px-8 rounded-2xl">
+    <section className="bg-pink-200 py-16 px-4 md:px-8 rounded-2xl">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
           Current Offerings
@@ -35,7 +35,7 @@ export default function Offerings() {
           {items.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition"
+              className="bg-white rounded-xl shadow-md hover:shadow-xl hover:shadow-pink-500 border border-pink-100 p-6 text-left transition-shadow duration-300"
             >
               <h3 className="text-lg font-semibold text-pink-600">
                 {item.name}
@@ -51,7 +51,8 @@ export default function Offerings() {
         <div className="mt-10">
           <button
             onClick={() => setShowModal(true)}
-            className="inline-block bg-gradient-to-r from-pink to-lightpink text-white font-semibold px-6 py-3 rounded shadow hover:opacity-90 transition"
+            // className="inline-block bg-gradient-to-r from-pink to-lightpink text-white font-semibold px-6 py-3 rounded shadow hover:opacity-60 transition"
+            className="inline-block font-semibold px-6 py-3 rounded  bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:bg-gradient-to-l focus:ring-purple-200 dark:focus:ring-purple-800"
           >
             Place an Order
           </button>

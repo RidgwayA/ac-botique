@@ -17,30 +17,31 @@ export default function ConsultationModal({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send(
-      "service_d38679m", // Your service ID
-      "template_l11bsy4", // New template ID for consultations
-      {
-        from_name: form.name,
-        from_email: form.email,
-        from_phone: form.phone,
-        message: form.message,
-      },
-      "02uQMqk_AnYi45TZP" // Your public key
-    )
-    .then(() => {
-      alert("Consultation request sent!");
-      onClose();
-    })
-    .catch((err) => {
-      console.error("EmailJS Error:", err);
-      alert("Something went wrong. Please try again later.");
-    });
+    emailjs
+      .send(
+        "service_d38679m", // Your service ID
+        "template_l11bsy4", // New template ID for consultations
+        {
+          from_name: form.name,
+          from_email: form.email,
+          from_phone: form.phone,
+          message: form.message,
+        },
+        "02uQMqk_AnYi45TZP" // Your public key
+      )
+      .then(() => {
+        alert("Consultation request sent!");
+        onClose();
+      })
+      .catch((err) => {
+        console.error("EmailJS Error:", err);
+        alert("Something went wrong. Please try again later.");
+      });
   };
 
   return (
     <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-50">
-      <div className="bg-white w-full max-w-lg p-6 md:p-8 rounded-xl shadow-xl relative">
+      <div className="bg-pink-50 w-full max-w-lg p-6 md:p-8 rounded-xl shadow-xl relative">
         <button
           className="absolute top-4 right-4 text-2xl text-black hover:text-gray-800"
           onClick={onClose}
@@ -48,7 +49,9 @@ export default function ConsultationModal({ onClose }) {
           &times;
         </button>
 
-        <h2 className="text-2xl font-bold mb-6 text-center text-black">Schedule a Consultation</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-black">
+          Schedule a Consultation
+        </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5 text-black">
           <input
@@ -89,7 +92,7 @@ export default function ConsultationModal({ onClose }) {
           />
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-pink-500 to-pink-700 text-white font-semibold px-6 py-3 rounded shadow hover:opacity-90"
+            className="inline-block w-full font-semibold px-6 py-3 rounded  bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:bg-gradient-to-l focus:ring-purple-200 dark:focus:ring-purple-800"
           >
             Submit Request
           </button>
