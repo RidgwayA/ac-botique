@@ -17,7 +17,7 @@ export default function Navbar() {
     className="h-10 w-auto object-contain"
   />
   <Link to="/" className="hover:text-pink transition">
-    Ann's Cupcake Botique
+    Ann's Cupcake Boutique
   </Link>
 </div>
 
